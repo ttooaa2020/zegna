@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.event-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem 0;
+
+  margin-top: 2.6316%;
+}
+
+.event-list li {
+  display: flex;
+  align-items: center;
+  text-align-last: left;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.event-list li figure {
+  position: relative;
+  width: 36rem;
+  height: 36rem;
+}
+
+.event-list li img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-list li {
+  text-align: center;
+}
+
+.event-text {
+  padding-top: 2%;
+}
+
+.event-text dt {
+  font-size: clamp(1.3rem, 1.042vw, 2rem);
+  font-weight: 700;
+}
+
+.event-text dd {
+  color: var(--Darck-60);
+  font-size: clamp(1.2rem, 0.78125vw, 1.5rem);
+  font-weight: 400;
+}
+
+.event-list > li figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--main-color);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.event-list > li:hover figure::after {
+  opacity: 0.5;
+}
+
+/* e.event */
+
+/* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+@media (max-width: 1900px) {
+  .event-list li figure {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 1610px) {
+  .event-list > li {
+    flex: 1 1 25%;
+  }
+
+  .event-list li figure {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .event-list > li {
+    flex: 1 1 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .event-list li figure {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-list > li {
+    flex: 1 1 50%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .event-list li figure {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .event-list li {
+    flex: 1 1 100%;
+  }
+
+  .event-list li figure {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .event-list dl dt {
+    font-size: 2rem;
+  }
+
+  .event-list dl dd {
+    font-size: 1.5rem;
+  }
+}
