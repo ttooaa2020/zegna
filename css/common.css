@@ -339,44 +339,6 @@ address {
     no-repeat center / contain;
 }
 
-.link-icon {
-  display: flex;
-  background: no-repeat 50%;
-  gap: 3rem;
-}
-
-.link-icon li:nth-child(1) a {
-  display: block;
-  width: 3rem;
-  height: 3rem;
-
-  background: url(../img/link-icon-1.svg) no-repeat 50% / contain;
-}
-
-.link-icon li:nth-child(2) a {
-  display: block;
-  width: 3rem;
-  height: 3rem;
-
-  background: url(../img/link-icon-2.svg) no-repeat 50% / contain;
-}
-
-.link-icon li:nth-child(3) a {
-  display: block;
-  width: 3rem;
-  height: 3rem;
-
-  background: url(../img/link-icon-3.svg) no-repeat 50% / contain;
-}
-
-.link-icon li:nth-child(4) a {
-  display: block;
-  width: 3rem;
-  height: 3rem;
-
-  background: url(../img/link-icon-4.svg) no-repeat 50% / contain;
-}
-
 /* e. footer */
 
 .top-btn {
